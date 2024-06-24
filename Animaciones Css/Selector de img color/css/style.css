@@ -1,0 +1,119 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+/* Body */
+body{
+    background-color: #ffffff;
+}
+
+/* Header */
+header{
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    background-color: brown;
+    border-bottom: 3px solid #000;
+}
+
+header>h1{
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 5px 5px #000;
+}
+
+/* Cars */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Images */
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imgs>img{
+    height: 40rem;
+    width: 40rem;
+    position: absolute;
+    top: 5rem;
+    
+}
+
+/* Image */
+.rojo{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.azul{
+    opacity: 1;
+    transition: opacity 2s;
+
+}
+
+.gris{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+/* Image Animations Class */
+.llegando{
+    animation: slide 2s;
+}
+
+
+
+/* Buttons */
+.btns{
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.azul-btn,
+.gris-btn,
+.rojo-btn{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+
+.azul-btn{
+    background-color: blue;
+}
+
+.gris-btn{
+    background-color: grey;
+}
+
+.rojo-btn{
+    background-color: red;
+
+}
+
+/* Animations */
+@keyframes slide {
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

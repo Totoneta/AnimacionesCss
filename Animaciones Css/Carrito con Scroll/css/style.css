@@ -1,0 +1,165 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+/* Body */
+body{
+    background-color: #000000;
+}
+
+/* Header */
+header{
+    width: 100%;
+    background: linear-gradient(#fff 70%, transparent);
+    text-align: center;
+    font-size: 2rem;
+    height: 7rem;
+}
+
+/* Cart */
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+}
+
+.cart {
+    border: 3px solid #fff;
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+/* Item Cart */
+.item-cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 28rem;
+    height: 6rem;
+    background-color: black;
+    color: #fff;
+    margin: .2rem 0;
+}
+
+.item-cart>img {
+    height: 4rem;
+}
+
+/* Buttons */
+.item-cart-btns {
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 5rem;
+}
+
+.item-cart-btns>button {
+    padding: .5rem;
+    background-color: #ff0101;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.item-cart-btns>button:hover {
+    background-color: #a90101;
+}
+
+/* Counter Items */
+.cant-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn-more {
+    background-color: #00a000;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-more:hover{
+    background-color: #0e700e;
+}
+
+.btn-less {
+    border: none;
+    cursor: pointer;
+    background-color: #ff0101;
+}
+
+.btn-less:hover {
+    background-color: #a90101;
+}
+
+/* Buttons Empty/Pay */
+.btns-cart{
+    display: flex;
+    justify-content: space-between;
+    width: 29.5rem;
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+.empty-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    width: 5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.empty-cart:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.pay-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    width: 5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pay-cart:hover{
+    background-color: #ffffff;
+    color: #000000;
+}

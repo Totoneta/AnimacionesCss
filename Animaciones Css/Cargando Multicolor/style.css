@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    position: relative;
+    top: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-family: "Poetsen One";
+    background: linear-gradient(#fff, #ff00aa, #0080ff, #d0ff00, #ff0000, #000);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container-balls {
+    place-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.cargando {
+    background: linear-gradient(#ff00aa, #0080ff, #d0ff00, #ff0000);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation: carga 3s ease-in-out infinite;
+
+}
+
+
+
+@keyframes carga {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 2;
+    }
+
+    100% {
+        scale: 1;
+    }
+
+}

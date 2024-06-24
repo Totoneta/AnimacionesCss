@@ -1,0 +1,68 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/* Container */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100%;
+}
+
+/* Carrucel */
+.carrucel{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 23rem;
+}
+
+/* Imagen */
+.imagen{
+    position: relative;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen>img{
+    height: 20rem;
+    width: 10rem;
+    transition-duration: 1s;
+    transition-property: all;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+
+.imagen>img:hover{
+    height: 30rem;
+    width: 18rem;
+}
+
+.imagen>h3{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 2rem;
+    font-size: 1.1rem;
+    transition: font-size 2s;
+    pointer-events: none;
+    width: auto;
+    font-weight: bold;
+    color: #ca0404;
+}
+
+/* Alineación */

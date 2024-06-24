@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #323232;
+}
+
+.container {
+    display: flex;
+    background-color: black;
+    height: 100vh;
+    width: 13rem;
+    transition: width 1s;
+    opacity: 0.7;
+}
+
+.container-closed {
+    width: 3rem;
+}
+
+.navegacion {
+    width: auto;
+    height: 100vh;
+    list-style: none;
+    overflow: hidden;
+    padding-top: 3rem;
+}
+
+.menu {
+    height: 2rem;
+    margin: .5rem .5rem;
+    cursor: pointer;
+    filter: drop-shadow(0 0px 10px #ffffff)
+}
+
+
+.menu-animation-right {
+    animation: rotacion ease-in-out 1s;
+}
+
+@keyframes rotacion {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+li > img{
+    filter: drop-shadow(0 0px 10px #ffffff)
+}
+
+.item {
+    font-family: "Merriweather";
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.enlace {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 .7rem;
+    opacity: 1;
+}
+
+.enlace:hover {
+    color: #ccc;
+}
